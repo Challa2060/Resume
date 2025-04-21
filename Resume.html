@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Srihari Chalasani | Portfolio</title>
+  
+    <!-- ✅ Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+      
+    <!-- ✅ Your stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate');
+        }
+      });
+    }, { threshold: 0.1 });
+    
+    document.querySelectorAll('.timeline-item, .bar').forEach(el => observer.observe(el));
+    </script>
+    
+<body>
+
+
+<header>
+  <h1>Srihari Chalasani</h1>
+  <p>Full-Stack Developer | Designer</p>
+</header>
+
+<nav>
+  <a href="#info">About</a>
+  <a href="#info">Experience</a>
+  <a href="#info">Skills</a>
+  <a href="#info">Education</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section class="grid-container" id="info">
+    <div class="left-column" id="about">
+      <h2>My Story</h2>
+      <p>
+        I am a curious and growth-driven individual, exploring multiple career fields to find my unique path. My journey began with hands-on business exposure through family entrepreneurship and diversified with internships in HR, analytics, and digital marketing. I love solving problems, working with people, and building digital solutions that make a difference.
+      </p>
+  
+      
+      <h2>Work Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="dot"></span>
+          <div class="content">
+            <p>
+              <strong>Shadowing MD at Dhanya Producer Company</strong><br>
+              Basapura, Karnataka, IN<br>
+              Jul 2024 – Present<br>
+              <em>Developed basic company website</em>
+            </p>
+          </div>
+        </div>
+      
+        <div class="timeline-item">
+          <span class="dot"></span>
+          <div class="content">
+            <p>
+              <strong>Digital Marketing Intern at Micks</strong><br>
+              Hyderabad, Telangana, IN<br>
+              Jun 2024 – Dec 2024<br>
+              <em>Research analysis for a newly launched product</em>
+            </p>
+          </div>
+        </div>
+      
+        <div class="timeline-item">
+          <span class="dot"></span>
+          <div class="content">
+            <p>
+              <strong>HR Intern at Sri Shyam Kanchi Sarees</strong><br>
+              Bhimavaram, Andhra Pradesh, IN<br>
+              Feb 2024<br>
+              <em>Assisted in HR allocation and team management</em>
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+  
+    <div class="right-column" id="skills">
+      <h2>My Skills</h2>
+  
+      <div class="skill-category">Collaboration / Teamwork</div>
+      <div class="skill-category">Research and Analysis</div>
+      <div class="skill-category">AI Prompt Engineering</div>
+  
+      <h3>Frontend Development</h3>
+      <div class="skill"><label>HTML</label><div class="bar expert animate"></div></div>
+      <div class="skill"><label>CSS</label><div class="bar professional animate"></div></div>
+      <div class="skill"><label>JavaScript</label><div class="bar professional animate"></div></div>
+  
+      <h3>Backend Development</h3>
+      <div class="skill"><label>MySQL</label><div class="bar intermediate animate"></div></div>
+      <div class="skill"><label>PHP</label><div class="bar intermediate animate"></div></div>
+  
+      <h3>Programming Languages</h3>
+      <div class="skill"><label>C Programming</label><div class="bar professional animate"></div></div>
+      <div class="skill"><label>Python</label><div class="bar professional animate"></div></div>
+  
+      <h2>Education</h2>
+      <p class="education-entry"><strong>BBA in Digital Business and Entrepreneurship</strong><br>
+        Indian Institute of Management (IIM) – Bangalore, IN<br>
+        <em>Specialization: Digital Business and Entrepreneurship</em></p>
+  
+      <p class="education-entry"><strong>Bachelor of Computer Applications (BCA)</strong><br>
+        PES University – Bangalore, IN<br>
+        <em>Specialization: Yet to Elect</em></p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <h2>Get In Touch</h2>
+    <p class="subtitle">Have a project in mind or want to discuss potential opportunities? I'd love to hear from you!</p>
+  
+    <div class="contact-container">
+      <!-- Left Column: Contact Info -->
+      <div class="contact-left">
+        <h3>Let's Talk</h3>
+        <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+  
+        <div class="contact-card">
+          <span>📧</span>
+          <div>
+            <small>Email</small>
+            <p><a href="mailto:sriharic24@iimb.ac.in">sriharic24@iimb.ac.in</a></p>
+          </div>
+        </div>
+  
+        <div class="contact-card">
+          <span>💼</span>
+          <div>
+            <small>LinkedIn</small>
+            <p><a href="https://www.linkedin.com/in/srihari-chalasani-3b2232345/" target="_blank">Srihari Chalasani</a></p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Right Column: Contact Form -->
+      <div class="contact-right">
+        <h3>Send Me a Message</h3>
+        <form>
+          <div class="form-row">
+            <input type="text" placeholder="Your name" required>
+            <input type="email" placeholder="Your email address" required>
+          </div>
+          <input type="text" placeholder="Message subject" required>
+          <textarea rows="5" placeholder="Your message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  
+
+<footer>
+  <p>Connect with me on <a href="https://www.linkedin.com/in/srihari-chalasani-3b2232345/">LinkedIn</a> | <a href="#">GitHub</a></p>
+  <p>&copy; 2025 Srihari Chalasani</p>
+</footer>
+
+</body>
+</html>
