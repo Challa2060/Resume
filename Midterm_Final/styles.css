@@ -390,7 +390,7 @@
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
     transition-delay: var(--delay, 0s);
   }
-  .scroll-animate.fade-in {}
+  /*.scroll-animate.fade-in {} */
   .scroll-animate.fade-in-up { transform: translateY(40px); }
   .scroll-animate.fade-in-left { transform: translateX(-40px); }
   .scroll-animate.fade-in-right { transform: translateX(40px); }
@@ -581,9 +581,6 @@
     .contact-container {
       flex-direction: column;
       gap: 1.5rem;
-    }
-    .form-row { /* Optional: stack form inputs */
-        /* display: flex; flex-direction: column; gap: 1rem; */
     }
     .timeline {
       margin-left: 0.5rem;
