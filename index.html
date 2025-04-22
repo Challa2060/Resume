@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Srihari Chalasani | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<header class="fade-in">
+  <div class="profile-picture-frame">
+    <img src="/Midterm_Final/Resume_pic.jpg" alt="Profile Picture Srihari Chalasani"> <!-- Add src="path/to/your/image.jpg" -->
+  </div>
+  <h1>Srihari Chalasani</h1>
+  <p><span id="typed-subtitle"></span></p>
+</header>
+
+<nav id="main-nav">
+    <!-- Links -->
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  
+    <!-- Theme Toggle Button (still inside nav) -->
+    <button id="theme-toggle" aria-label="Toggle dark/light theme">
+        <i class="fas fa-moon"></i>
+    </button>
+  </nav>
+
+<!-- Section 1: About Me -->
+<section id="about" class="scroll-animate fade-in-up content-section">
+    <h2>My Story</h2>
+    <p>
+        Driven by curiosity, I'm forging a unique path blending technology, design, and business strategy. 
+        My diverse background spans family entrepreneurship and internships in HR, digital marketing, and 
+        business shadowing, where I took the initiative to develop a company website. <br><br>
+
+        As a Full-Stack Developer and Designer, I'm skilled in frontend technologies (HTML/CSS/JS), 
+        core programming (C/Python), and backend basics, complemented by strengths in collaboration and 
+        problem-solving.<br><br>
+
+        Currently pursuing both a BCA and a specialized BBA in Digital Business from IIM Bangalore, 
+        I aim to leverage this blend of technical expertise and business understanding to create 
+        impactful digital solutions.
+    </p>
+</section>
+
+<!-- Section 2: Skills -->
+<section id="skills" class="scroll-animate fade-in-up content-section">
+    <h2>My Skills</h2>
+    <div class="skills-container">
+        <div class="skill-category scroll-animate fade-in">Collaboration / Teamwork</div>
+        <div class="skill-category scroll-animate fade-in" style="--delay: 0.1s;">Research and Analysis</div>
+        <div class="skill-category scroll-animate fade-in" style="--delay: 0.2s;">AI Prompt Engineering</div>
+        <h3 class="scroll-animate fade-in">Frontend Development</h3>
+        <div class="skill scroll-animate fade-in"><label>HTML</label><div class="bar expert animate"></div></div>
+        <div class="skill scroll-animate fade-in" style="--delay: 0.1s;"><label>CSS</label><div class="bar professional animate"></div></div>
+        <div class="skill scroll-animate fade-in" style="--delay: 0.2s;"><label>JavaScript</label><div class="bar professional animate"></div></div>
+        <h3 class="scroll-animate fade-in" style="--delay: 0.3s;">Backend Development</h3>
+        <div class="skill scroll-animate fade-in" style="--delay: 0.4s;"><label>MySQL</label><div class="bar intermediate animate"></div></div>
+        <div class="skill scroll-animate fade-in" style="--delay: 0.5s;"><label>PHP</label><div class="bar intermediate animate"></div></div>
+        <h3 class="scroll-animate fade-in" style="--delay: 0.6s;">Programming Languages</h3>
+        <div class="skill scroll-animate fade-in" style="--delay: 0.7s;"><label>C Programming</label><div class="bar professional animate"></div></div>
+        <div class="skill scroll-animate fade-in" style="--delay: 0.8s;"><label>Python</label><div class="bar professional animate"></div></div>
+    </div>
+</section>
+
+<!-- Section 3: Experience & Education Grid -->
+<section id="experience-education" class="grid-container content-section">
+    <!-- Left Column: Work Experience -->
+    <div class="left-column scroll-animate fade-in-left">
+        <div id="experience">
+            <h2>Work Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item scroll-animate fade-in-up">
+                    <span class="dot"></span>
+                    <div class="content">
+                        <p>
+                            <strong>Shadowing MD at Dhanya Producer Company</strong><br>
+                            Basapura, Karnataka, IN<br>
+                            Jul 2024 – Present<br>
+                            <!-- Added detail-line class -->
+                            <em class="detail-line">Developed basic company website</em>
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item scroll-animate fade-in-up" style="--delay: 0.1s;">
+                    <span class="dot"></span>
+                    <div class="content">
+                        <p>
+                            <strong>Digital Marketing Intern at Micks</strong><br>
+                            Hyderabad, Telangana, IN<br>
+                            Jun 2024 – Dec 2024<br>
+                            <!-- Added detail-line class -->
+                            <em class="detail-line">Research analysis for a newly launched product</em>
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item scroll-animate fade-in-up" style="--delay: 0.2s;">
+                    <span class="dot"></span>
+                    <div class="content">
+                        <p>
+                            <strong>HR Intern at Sri Shyam Kanchi Sarees</strong><br>
+                            Bhimavaram, Andhra Pradesh, IN<br>
+                            Feb 2024<br>
+                            <!-- Added detail-line class -->
+                            <em class="detail-line">Assisted in HR allocation and team management</em>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Right Column: Education -->
+    <div class="right-column scroll-animate fade-in-right">
+        <div id="education">
+            <h2>Education</h2>
+            <!-- Added timeline structure -->
+            <div class="timeline">
+                <!-- First Education Entry -->
+                <div class="timeline-item scroll-animate fade-in-up">
+                    <span class="dot"></span>
+                    <div class="content"> <!-- Added content wrapper -->
+                        <p> <!-- Keep original p tag for semantics if desired -->
+                            <strong>BBA in Digital Business and Entrepreneurship</strong><br>
+                            Indian Institute of Management (IIM) – Bangalore, IN<br>
+                            <!-- Added detail-line class -->
+                            <em class="detail-line">Specialization: Digital Business and Entrepreneurship</em>
+                        </p>
+                    </div>
+                </div>
+                <!-- Second Education Entry -->
+                <div class="timeline-item scroll-animate fade-in-up" style="--delay: 0.1s;">
+                    <span class="dot"></span>
+                    <div class="content"> <!-- Added content wrapper -->
+                         <p>
+                            <strong>Bachelor of Computer Applications (BCA)</strong><br>
+                            PES University – Bangalore, IN<br>
+                            <!-- Added detail-line class -->
+                            <em class="detail-line">Specialization: Yet to Elect</em>
+                        </p>
+                    </div>
+                </div>
+            </div> <!-- End timeline div -->
+        </div>
+    </div>
+</section>
+
+<!-- Section 4: Contact -->
+<section id="contact" class="contact-section scroll-animate fade-in-up content-section">
+    <h2>Get In Touch</h2>
+    <p class="subtitle">Have a project in mind or want to discuss potential opportunities? I'd love to hear from you!</p>
+    <div class="contact-container">
+      <div class="contact-left scroll-animate fade-in-left">
+        <h3>Let's Talk</h3>
+        <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+        <div class="contact-card hover-lift">
+          <span>📧</span>
+          <div> <small>Email</small> <p><a href="mailto:sriharic24@iimb.ac.in">sriharic24@iimb.ac.in</a></p> </div>
+        </div>
+        <div class="contact-card hover-lift">
+          <span><i class="fab fa-linkedin"></i></span>
+          <div> <small>LinkedIn</small> <p><a href="https://www.linkedin.com/in/srihari-chalasani-3b2232345/" target="_blank">Srihari Chalasani</a></p> </div>
+        </div>
+      </div>
+      <div class="contact-right scroll-animate fade-in-right">
+        <h3>Send Me a Message</h3>
+        <form id="contact-form">
+          <div class="form-row"> <input type="text" placeholder="Your name" required> <input type="email" placeholder="Your email address" required> </div>
+          <input type="text" placeholder="Message subject" required>
+          <textarea rows="5" placeholder="Your message" required></textarea>
+          <button type="submit" class="hover-button-glow">Send Message</button>
+        </form>
+      </div>
+    </div>
+</section>
+
+<footer>
+  <p>Connect with me on <a href="https://www.linkedin.com/in/srihari-chalasani-3b2232345/">LinkedIn</a> | <a href="#">GitHub</a></p>
+  <p>© 2025 Srihari Chalasani</p>
+</footer>
+
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script>
+    // --- Intersection Observer for Animations ---
+    const observerOptions = { root: null, rootMargin: '0px', threshold: 0.1 };
+    const observerCallback = (entries, observer) => { entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('animate'); /* observer.unobserve(entry.target); */ } }); };
+    const animationObserver = new IntersectionObserver(observerCallback, observerOptions);
+    document.querySelectorAll('.scroll-animate').forEach(el => animationObserver.observe(el));
+    const skillBarObserver = new IntersectionObserver(entries => { entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('animate'); } }); }, { threshold: 0.5 });
+    document.querySelectorAll('.bar').forEach(el => skillBarObserver.observe(el));
+
+    // --- Smooth Scrolling ---
+    document.querySelectorAll('nav a[href^="#"]').forEach(anchor => { anchor.addEventListener('click', function (e) { e.preventDefault(); const targetId = this.getAttribute('href'); const targetElement = document.querySelector(targetId); if (targetElement) { const headerOffset = document.getElementById('main-nav').offsetHeight + 10; const elementPosition = targetElement.getBoundingClientRect().top; const offsetPosition = elementPosition + window.pageYOffset - headerOffset; window.scrollTo({ top: offsetPosition, behavior: "smooth" }); } }); });
+
+    // --- Active Nav Link Highlighting ---
+    const sections = document.querySelectorAll('section[id]');
+    const navLi = document.querySelectorAll('#main-nav a');
+    const navHeight = document.getElementById('main-nav').offsetHeight;
+    window.addEventListener('scroll', () => { let currentSectionId = ''; const scrollY = window.pageYOffset; const windowHeight = window.innerHeight; const docHeight = document.documentElement.scrollHeight; if (windowHeight + scrollY >= docHeight - 5) { currentSectionId = sections[sections.length - 1].id; } else { sections.forEach(section => { const sectionTop = section.offsetTop - navHeight - 50; const sectionBottom = sectionTop + section.clientHeight; if (scrollY >= sectionTop && scrollY < sectionBottom) { currentSectionId = section.id; } }); } if (scrollY < sections[0].offsetTop - navHeight - 50) { currentSectionId = sections[0].id; } navLi.forEach(a => { a.classList.remove('active'); const linkHrefId = a.getAttribute('href').substring(1); if (linkHrefId === currentSectionId) { if (currentSectionId !== 'experience-education') { a.classList.add('active'); } } if (currentSectionId === 'experience-education') { if (linkHrefId === 'experience' || linkHrefId === 'education') { a.classList.add('active'); } } }); if (scrollY < sections[0].offsetTop - navHeight - 50 && currentSectionId === sections[0].id ) { navLi.forEach(a => { a.classList.remove('active'); if (a.getAttribute('href') === '#about') { a.classList.add('active'); } }); } });
+
+    // --- Typing Effect ---
+    const typed = new Typed('#typed-subtitle', { strings: ['Full-Stack Developer', 'Designer', 'Problem Solver', 'Tech Enthusiast'], typeSpeed: 50, backSpeed: 30, loop: true, backDelay: 1500 });
+
+    // --- Contact Form Placeholder ---
+    const contactForm = document.getElementById('contact-form');
+    contactForm.addEventListener('submit', function(e) { e.preventDefault(); const submitButton = contactForm.querySelector('button[type="submit"]'); submitButton.textContent = 'Sending...'; submitButton.disabled = true; setTimeout(() => { submitButton.textContent = 'Message Sent! (Demo)'; submitButton.style.backgroundColor = '#10B981'; setTimeout(() => { submitButton.textContent = 'Send Message'; submitButton.disabled = false; submitButton.style.backgroundColor = ''; }, 3000); }, 1500); });
+        // --- Theme Toggle Logic ---
+        const themeToggleButton = document.getElementById('theme-toggle');
+    const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    function setTheme(theme) {
+        if (theme === 'light') {
+            document.documentElement.setAttribute('data-theme', 'light');
+            themeToggleButton.innerHTML = '<i class="fas fa-sun"></i>'; // Sun icon
+            localStorage.setItem('theme', 'light');
+        } else {
+            document.documentElement.removeAttribute('data-theme');
+            themeToggleButton.innerHTML = '<i class="fas fa-moon"></i>'; // Moon icon
+            localStorage.setItem('theme', 'dark');
+        }
+    }
+
+    if (currentTheme) {
+        setTheme(currentTheme);
+    } else if (systemPrefersDark) {
+         setTheme('dark');
+    } else {
+         setTheme('light'); // Default to light if system prefers light and no user pref
+    }
+
+    themeToggleButton.addEventListener('click', () => {
+        const currentAppliedTheme = document.documentElement.getAttribute('data-theme');
+        if (currentAppliedTheme === 'light') {
+            setTheme('dark');
+        } else {
+            setTheme('light');
+        }
+    });
+
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+        if (!localStorage.getItem('theme')) { // Only react if no manual preference is set
+             setTheme(e.matches ? 'dark' : 'light');
+        }
+    });
+    // --- End Theme Toggle Logic ---
+</script>
+
+</body>
+</html>
